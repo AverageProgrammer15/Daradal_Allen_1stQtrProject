@@ -1,0 +1,374 @@
+<head>
+	
+	<title>Allen's Cool Shop</title>
+	<style type="text/css">
+
+		.price {
+            font-size: 24px;
+            color: #0017db;
+        }
+		body{
+			background-color: rgb(243, 245, 246);
+			font-family: Basic Commercial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.87;
+            color: #333;
+		}
+		#topbar{
+			position: sticky;
+			top: 0;
+			padding: 5px;
+			width: 1450px;
+			background-color: green;
+			border-style: none;
+            color: #2048ac;
+			
+			
+		}
+		.Item{
+			text-wrap: wrap;
+			display: inline-flex;
+
+			
+		}
+		.ItemShowcase{
+			background-color: gray;
+			padding: 30px;
+			display: inline-block;
+			
+
+		}
+		.ItemDesc{
+			padding: 2px 15px;
+			padding-top: 35px;
+			border-style: solid;
+			border-spacing: 5px;
+			background-color: white;
+			width: 500px;
+		}
+		.Image{
+			align:margin-left;
+			padding-right: 50px;
+			max-height: 100%;
+			max-width: 100%;
+		}
+		.Image2{
+			padding-left: 50px;
+			max-height: 50%;
+			max-width: 100%;
+			margin-top: 55px;
+		}
+		#LogoImg{
+			width: 220px;
+			height:120px;
+			vertical-align: middle;
+			display: inline-block;
+			margin: 10px;
+			margin-top: 45px;
+			margin-bottom: 25px;
+			margin-left: 250px;
+			
+		}
+		#OthOpt{
+			background-color: blue;
+
+		}
+		.PopularItemsImg{
+			padding: 15px;
+			display: inline-block;
+			background-color: lightgray;
+
+		}
+		#HotPicksText{
+			
+			color: darkblue;
+			
+			display: inline-block;
+		}
+		.Popular_Items{
+			
+		}
+		#HotImg1:hover, #HotImg2:hover, #HotImg3:hover, #HotImg4:hover, #HotImg5:hover, #HotImg6:hover, #HotImg7:hover, #HotImg8:hover{
+			
+			transform: scale(1.1);
+			transition: transform 0.3s ease;
+		}
+		#HotImg1:active, #HotImg2:active, #HotImg3:active, #HotImg4:active, #HotImg5:active, #HotImg6:active, #HotImg7:active, #HotImg8:active{
+			
+			transform: scale(0.7);
+			transition: transform 0.3s ease;
+		}
+		.ProName{
+			font-weight: 700;
+			font-size: 25;
+			color: #1e2d7d;
+		}
+		.addtocart{
+			padding: 15px;
+			background: #0017db;
+			color: #fff;
+		}
+		.addtocart:hover{
+			transform: scale(1.1);
+			transition: transform 0.2s ease;
+		}
+		.addtocart:active{
+			transform: scale(0.7);
+			transition: transform 0.3s ease;
+		}
+		#CostDiscount{
+			background-color: yellow;
+			text-align:center;
+			border-style:solid;
+			border-color:red;
+
+			h2{
+				color: black;
+			}
+			
+		}
+		figure{
+			margin: 10px;
+			display: inline-block;
+		}
+		.verticalhr{
+			width: 1px; /* Vertical line width */
+            height: 300px; /* Vertical line height */
+            background-color: black; /* Line color */
+            border: none; /* Remove default border */
+            display: inline-block;
+		}
+		
+		.Impspan2{
+			color: orangered;
+		}
+		#SearchBr{
+			margin-bottom: 50px;
+			padding: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			position: relative;
+		}
+
+		#OthOpt {
+         background-color: green;
+         color: white;
+         display: flex; /* Use flexbox to align items */
+         align-items: center; /* Vertically align items */
+         justify-content: space-between; /* Space them out evenly */
+         height: 100px;
+
+         
+
+        }
+
+        #SearchDiv{
+        	margin-right:25px ;
+        	margin-top: 70px;
+        	margin-right: 550px;
+        }
+        #navbar{
+        	background-color:white;
+        	text-align:center;
+        	height:45px;
+        	a{
+        		display: inline-block;
+        		padding: 10px;
+        		text-decoration: none;
+        		color: black;
+        	};
+        	a:hover{
+        		background-color: blueviolet;
+
+        	}
+        }
+
+        #TagLine{
+        	position: absolute;
+        	margin-left: 300px;
+        	top: 65px;
+        	left: -10px;
+        }
+
+        #Serious_text{
+        	color: darkviolet;
+        }
+
+        #Steroids{
+        	color: lightblue;
+        }
+
+        
+
+
+
+		
+	</style>
+</head>
+
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Navigation Bar -->
+	<div id="topbar">
+		<div id="OthOpt">
+			<div id="Logo">
+			<img src="https://www.brandbucket.com/sites/default/files/logo_uploads/300309/large_multiplayer.io_0.png" id="LogoImg">
+			
+			<p id="TagLine"><i><span id="Serious_text">Serious Fun on </span><span id="Steroids">Steroids.</span></i></p>
+			
+			</div>
+			
+			<center>
+			<div id="SearchDiv">
+			<input type="text" placeholder="Search" id="SearchBr">
+			<button><i class="fa fa-search" style="padding: 15px; font-size: 15px; size: 13px;"></i></button>
+			</div>
+			</center>
+		</div>
+		<hr>
+		<div id="navbar">
+		<a href="#ShopAnnouncments">Announcments</a>
+		<a href="#HotPicksText">Gaming Consoles</a>
+		<a href="#NewArrivals">New releases</a>
+
+		</div>
+	</div>
+
+	<br><br><br>
+	<center>
+	
+	</center>
+	<!-- Shop Items -->
+	<div id="ShopAnnouncments">
+    <center>
+		<a href="https://ecommerce.datablitz.com.ph/collections/amiibo" target="_blank"><img src="https://ecommerce.datablitz.com.ph/cdn/shop/files/AMIBOO_1400x_34762e54-098d-4b35-9d91-44f218c7ec47_1000x.jpg?v=1708683939"></a>
+	</center>
+	</div>
+	<hr>
+	<div id="CostDiscount">
+		<h2>Announcment!</h2>
+
+		<h1><i> <span class="Impspan2">50% discount for all items!</span> </i></h1>
+	</div>
+	<hr>
+	<!-- Hot Items -->
+	<h1 id="HotPicksText">HOT ITEMS</h1>
+	<br>
+	<div class="Popular_Items">
+		
+		<br>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn_EpjVvjPV14VNx6JEi6dwPYzKZRAl08nfA&s" style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg1">
+		
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0pC1efPNMBIL4Ra0MwDEXM5eRV0iXa14Pw&s" style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg2">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eHy1C3NEFZcNWjB47L4RR8G4igJn2rceCQ&s" style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg3">
+
+		<img src="https://preview.redd.it/cc2lwq5ydg3z.jpg?auto=webp&s=0e40af4965e1a3246ee7a3e20d16f6f4520ce449" style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg4">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dKVPJqUJMhusUUUQ8UbpzrcTL3JpXVdcBg&s" style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg5">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzQX9aSVpv2VTtx86sT8yArRaC3I6LyOCVA&s" style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg6">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1oMvDAFoGNjOecSXYaz86KhEC7otor7Rwg&s"  style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg7">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzNAgAI_s6V-TpyRNN9yajf9zdMSZ-JnsRA&s"  style="width: 133; height: 200;" class="PopularItemsImg" id="HotImg8">
+	
+	</div>
+
+	<br><br><br>
+	<!-- Gaming Consoles -->
+	<hr>
+	<h1 id="ShopStart">Gaming Consoles</h1>
+	<div class="ItemShowcase">
+		<div class="Item">
+			<img src="https://ecommerce.datablitz.com.ph/cdn/shop/files/1000000015157PRE-3_72b2fe79-407c-4e44-99c7-f84ff1c34d6e_300x.jpg?v=1721146200" class="Image">
+			<div class="ItemDesc">
+				<label class="ProName">PlayStation</label>
+				<p><i>PlayStation is a gaming console brand developed by Sony Interactive Entertainment, first launched in 1994. It quickly became a major force in the gaming industry with its advanced graphics, immersive gameplay, and diverse game library.</i></p>
+				<br>
+				<h2 class="price">  ₱25,000</h2>
+				<button class="addtocart">&#128722;Add To Cart</button>
+			</div> 
+		</div> 
+	</div> 
+
+	
+	<hr>
+	<div class="ItemShowcase" style="margin-left: 450px;">
+		<div class="Item">
+			<div class="ItemDesc">
+				<label class="ProName">Nintendo Switch OLED</label>
+				<p><i>The Nintendo Switch OLED is an upgraded version of the popular Nintendo Switch console, featuring a vibrant 7-inch OLED display. Released in 2021, it offers enhanced visuals and improved audio while maintaining the hybrid nature of the original, allowing for both handheld and docked play.</i></p>
+				<br>
+				<h2 class="price">  ₱10,500</h2>
+				<button class="addtocart">&#128722; Add To Cart</button>
+			</div>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK30QkJOvvQeEXUVRUF7aRgwvrUUnFNbudKw&s" class="Image2">
+			
+		</div>
+	</div>
+	<hr>
+	<div class="ItemShowcase">
+		<div class="Item">
+			<img src="https://cdn.shopify.com/s/files/1/0355/8296/7943/files/Steam-Deck-OLED2_c52c3e71-17dd-4f3a-8ce6-d17fd7951dda_360x.jpg?v=1702778191" class="Image">
+			<div class="ItemDesc">
+				<label class="ProName">Steam Deck</label>
+				<p><i>The Steam Deck is a handheld gaming console developed by Valve, designed to run PC games from the Steam platform. Released in 2022, it combines the portability of a handheld device with the power of a gaming PC, allowing players to access their Steam library on the go.</i></p>
+				<br>
+				<h2 class="price">  ₱16,500</h2>
+				<button class="addtocart">&#128722;Add To Cart</button>
+			</div> 
+		</div> 
+	</div> 
+
+	
+
+
+     <!-- New Arrivals -->
+
+	<h1 id="NewArrivals">New Arrivals</h1>
+	<figure>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaeBHH0yizeDnmvRpaGb3sHmZz3bbdNbgI6w&s">
+	<figcaption>
+		<h3 class="ProName">Advanced PC</h3>
+		<h2 class="price">₱25,000</h2>
+		<button class="addtocart">&#128722;Add to Cart</button>
+
+	</figcaption>
+	</figure>
+	<hr class="verticalhr">
+	<figure>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQweNGepBL7e82mc1eIiUOzr3o7uTjX9PSdAw&s" style="max-height: 70%; max-width: 90%;">
+	<figcaption>
+		<h3 class="ProName">RGB Keyboard</h3>
+		<h2 class="price">₱1,850</h2>
+
+		<button class="addtocart">&#128722;Add to Cart</button>
+	</figcaption>
+	</figure>
+
+	<hr class="verticalhr">
+	<figure>
+	<img src="https://ecommerce.datablitz.com.ph/cdn/shop/files/788394-Product-0-I-638622289805265363_500x.jpg?v=1728962993" style="max-height: 9%;max-width: 49%;">
+	<figcaption>
+		<h3 class="ProName">Headset</h3>
+		<h2 class="price">₱999</h2>
+
+		<button class="addtocart">&#128722;Add to Cart</button>
+	</figcaption>
+	</figure>
+	<br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI4eZE-bKQPc3r7W9g717YCv_j7cqnQz51Mg&s" style="max-height: 20%; max-width: 40%;">
+	<figcaption>
+		<h3 class="ProName">Wireless Mouse</h3>
+		<h2 class="price">₱1200</h2>
+
+		<button class="addtocart">&#128722;Add to Cart</button>
+	</figcaption>
+	</figure>
+</body>
+
+<!--  -->
